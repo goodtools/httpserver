@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="http://g.tbcdn.cn/mtb/zepto/1.0.2/zepto.js"></script>
+    <!-- 304 -->
+    <script src="http://a.tbcdn.cn/s/aplus_wap.js"></script>
+    <!-- 200 -->
+    <script src="http://a.tbcdn.cn/cps/trace.js"></script>
+    <script src="http://lu.m.taobao.com/expires.js?v=123"></script>
+</head>
+<body>
+hello world
+</body>
+<script>
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "http://lu.m.taobao.com/expires.js?v=2";
+    $("head").append(s);
+</script>
+<script>
+    window.addEventListener("load", function () {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.src = "http://lu.m.taobao.com/expires.js";
+        $("head").append(s);
+    })
+</script>
+</html>
